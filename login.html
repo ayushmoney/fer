@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-light bg-light" style="padding-bottom: 0">
+  <a class="navbar-brand" href="http://localhost:3000/register">
+    <img src="https://i.ibb.co/TwgxMcZ/Polish-20200730-155628512.jpg" width="320" height="120" alt="">
+  </a>
+</nav>
+	<h1 style="margin: 2%">LOGIN</h1>
+	<div class="row" style="margin-top: auto">
+  <div class="col-sm-5" style="margin-left: auto">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Login using mail</h5>
+        <p class="card-text text-center">
+        	<form action="/login" method="POST">
+        		<label for="mail">Mail</label><br>
+        		<input type="email" name="username" ><br>
+        		<label for="password">Password</label><br>
+        		<input type="password" name="password"><br>
+            <a href="/forgot" style="margin-right: 0">Forgot Password</a><br><br>
+        		<button type="submit" class="btn btn-dark">Login</button>
+        	</form>
+        </p>
+      </div>
+    </div>
+  </div>
+  OR
+  <div class="col-sm-5" style="margin-right: auto">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Login with google</h5>
+        <p class="card-text">
+        	 <a class="btn btn-block" href="/auth/google" role="button">
+            <i class="fab fa-google"></i>
+            Login Up with Google
+          </a>
+      </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

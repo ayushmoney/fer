@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forgot password</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+	<nav class="navbar navbar-light bg-light" style="padding-bottom: 0">
+  <a class="navbar-brand" href="http://localhost:3000/register">
+    <img src="https://i.ibb.co/TwgxMcZ/Polish-20200730-155628512.jpg" width="320" height="120" alt="">
+  </a>
+</nav>
+	<h1 style="padding-left: 2%">Forgot password!</h1>
+	<em><h4 style="padding-left: 2%">We'll help you in every way possible.</h4></em>
+
+	<div class="col-sm-6" style="margin: auto" >
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">Please provide the registered email.</h5>
+        <p class="card-text" style="padding-left:auto  ">
+        	<form action="/forgot" method="POST">
+        		<label for="OTP">EMAIL</label><br>
+        		<input type="text" name="email"><br> <br>
+        		<button type="submit" class="btn btn-dark">Continue</button>
+        	</form>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
